@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Store | Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar show-menu">
+        <div class="header-inner-content">
+            <h1 class="logo">BLUE<span>STORE</span></h1>
+
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                    <li>Conta</li>
+                </ul>
+            </nav>
+
+            <div class="nav-icon-container">
+                <img src="images/images/cart.png">
+                <img src="images/images/menu.png" class="menu-button">
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Dê um Novo Estilo ao seu Trabalho!</h2>
+                    <p>Sucesso nem sempre tem haver com grandeza. Tem haver com consistência. Trabalho duro consistente
+                        supera o sucesso. A grandeza virá.</p>
+                    <button>Ver Agora &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="images/images/gaming-msi-header.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Main Content-->
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="images/images/products/product-1.png" alt="">
+                    <img src="images/images/products/product-2.png" alt="">
+                    <img src="images/images/products/product-3.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page-inner-content">
+            <h3 class="section-title">Produtos Selecionados</h3>
+            <div class="subtitle-underline"></div>
+            <div class="cols cols-4">
+                <div>
+                    <img src="images/images/products/product-4.png" alt="">
+                    <p>Combo Gamer Meetion</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script>
+
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle('show-menu');
+        });
+    </script>
+</body>
+
+</html>
